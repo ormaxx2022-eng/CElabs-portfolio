@@ -42,7 +42,8 @@ Focus:
 - API layers over on-chain data
 
 Entry point:
-- `domains/onchain-data-indexing.md`
+**On-chain Data & Indexing Architecture**  
+- [`domains/onchain-data-indexing.md`](./domains/onchain-data-indexing.md)
 
 ### 2) Smart Contract & Protocol Architecture (architecture-level)
 Focus:
@@ -52,7 +53,8 @@ Focus:
 - invariants, failure modes, safety boundaries
 
 Entry point:
-- `domains/protocol-smart-contract-architecture.md`
+**Protocol & Smart-Contract Architecture**  
+- [`domains/protocol-smart-contract-architecture.md`](./domains/protocol-smart-contract-architecture.
 
 ### 3) Mempool / MEV-aware Systems (surface-level, safe)
 Focus:
@@ -62,7 +64,8 @@ Focus:
 - Flashbots / MEV-Boost overview (architecture-level)
 
 Entry point:
-- `domains/mempool-mev-aware-systems.md`
+**Mempool / MEV-aware Systems (surface-level)**  
+- [`domains/mempool-mev-aware-systems.md`](./domains/mempool-mev-aware-systems.md)
 
 ### 4) L1/L2 Infrastructure Architecture
 Focus:
@@ -72,7 +75,8 @@ Focus:
 - observability & reliability patterns
 
 Entry point:
-- `domains/l1-l2-infrastructure-architecture.md`
+**L1/L2 Infrastructure Architecture**  
+- [`domains/l1-l2-infrastructure-architecture.md`](./domains/l1-l2-infrastructure-architecture.md)`
 
 ### 5) Tokenomics Architecture (architecture-level)
 Focus:
@@ -81,7 +85,8 @@ Focus:
 - governance modules, utility design (no market interpretation)
 
 Entry point:
-- `domains/tokenomics-architecture.md`
+**Tokenomics Architecture**  
+- [`domains/tokenomics-architecture.md`](./domains/tokenomics-architecture.md)
 
 ---
 
