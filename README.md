@@ -1,43 +1,114 @@
 # Web3 Systems & Protocol Architecture Portfolio
 
-Clean-room portfolio of system design artifacts: specs, diagrams, invariants, interfaces, and architecture samples.
-No proprietary code. No client IP. Focus on long-lived protocol and data infrastructure design.
+Clean-room portfolio of architecture artifacts: specs, diagrams, interfaces, invariants, and system design notes for long-living Web3 infrastructures.
+No proprietary code. No client IP. Focus on protocol, data, and infrastructure architecture.
+
+## Positioning
+
+I operate as a Senior/Principal Web3 Architect across:
+- on-chain data & indexing systems
+- protocol and smart-contract architecture (architecture-level)
+- L1/L2 infrastructure flows (rollup / bridge / observability patterns)
+- mempool/MEV-aware systems (surface-level; safe, non-strategic)
+- tokenomics architecture (emissions, vesting/locking, incentives, governance modules)
+
+This repository is the **hub**: it provides a structured map of competency domains and the architectural foundations behind my approach.
+
+---
+
+## Architectural Foundations (must-read)
+
+These documents define how I think about long-term system stability, ownership zones, and guard rails.
+
+- **Architectural Responsibility & Ownership Boundaries**
+  - Scope: invariants, interfaces, failure modes, guard rails
+  - Purpose: reduce long-term risk, prevent responsibility collapse
+  - File: `foundations/architectural-responsibility.md`
+
+(Additional foundations will be added here as the portfolio grows.)
+
+---
 
 ## Competency Domains (5 pillars)
 
-1) On-chain Data & Indexing Architecture  
-- indexers, observers, ETL/ELT, schemas, integrity guard rails  
-→ Repo: (link)
+Each domain is represented as a clean-room “pillar” with architecture notes and samples.
+Initially, these are documents inside this repo. Later, they can be split into dedicated repositories.
 
-2) Smart Contract & Protocol Architecture  
-- modular contract systems, upgradeability models, invariants, failure modes  
-→ Repo: (link)
+### 1) On-chain Data & Indexing Architecture
+Focus:
+- indexers / observers / harmonizers
+- event logs, traces, internal execution reconstruction (architecture-level)
+- ETL/ELT pipelines, schema design, integrity checks
+- API layers over on-chain data
 
-3) Mempool / MEV-aware Systems (surface-level)  
-- transaction lifecycle, propagation, public/private mempools, ordering constraints  
-→ Repo: (link)
+Entry point:
+- `domains/onchain-data-indexing.md`
 
-4) L1/L2 Infrastructure Architecture  
-- rollup pipelines, sequencer flows, DA concepts, bridge patterns, observability  
-→ Repo: (link)
+### 2) Smart Contract & Protocol Architecture (architecture-level)
+Focus:
+- modular contract systems (proxy/router/factory patterns)
+- upgradeability models (high-level)
+- staking / vesting / rewards / escrow modules (design-level)
+- invariants, failure modes, safety boundaries
 
-5) Tokenomics Architecture  
-- emission schedules, vesting/locking modules, incentive mechanisms, governance models  
-→ Repo: (link)
+Entry point:
+- `domains/protocol-smart-contract-architecture.md`
 
-## Architectural Foundations
-- Architectural Responsibility & Ownership Boundaries
-- Why systems fail without ownership zones
-- Invariants & guard rails as a stability layer
+### 3) Mempool / MEV-aware Systems (surface-level, safe)
+Focus:
+- transaction lifecycle & propagation
+- public vs private mempools (conceptual)
+- ordering constraints, latency-aware considerations (system-level)
+- Flashbots / MEV-Boost overview (architecture-level)
 
-## Outputs I deliver
-- architecture specs (PDF/MD)
-- component diagrams (Mermaid / draw.io)
-- interface contracts and state-transition models
-- integration blueprints
-- risk/failure-mode analysis (system-level)
+Entry point:
+- `domains/mempool-mev-aware-systems.md`
+
+### 4) L1/L2 Infrastructure Architecture
+Focus:
+- sequencer → execution → settlement pipelines (conceptual)
+- DA-layer integration patterns (conceptual)
+- bridge architectures: lock/unlock, mint/burn, relayer flows
+- observability & reliability patterns
+
+Entry point:
+- `domains/l1-l2-infrastructure-architecture.md`
+
+### 5) Tokenomics Architecture (architecture-level)
+Focus:
+- emission schedules, supply management, distribution models
+- vesting/locking, staking/rewards, incentive loops
+- governance modules, utility design (no market interpretation)
+
+Entry point:
+- `domains/tokenomics-architecture.md`
+
+---
+
+## Typical Outputs
+
+Depending on the engagement type, I deliver:
+- system design documents (MD/PDF), architecture specs
+- component diagrams (Mermaid / draw.io), state & transition models
+- interface contracts, integration blueprints
+- invariants & guard rails definitions
+- failure-mode analysis and degradation strategies
+
+---
+
+## Engagement Notes (clean-room / scope clarity)
+
+This portfolio intentionally avoids proprietary implementations.
+My architectural ownership typically covers:
+- system structure, interfaces, invariants
+- guard rails and failure-mode handling
+- long-term stability and evolution constraints
+
+Delivery execution, product prioritization, and operational staffing are owned by their respective functions/teams.
+
+---
 
 ## Contact
-Email: ormaxx2022@gmail.com
-GitHub: ormaxx2022-eng
+-Email: ormaxx2022@gmail.com
+- Telegram: @maxx2q
 
