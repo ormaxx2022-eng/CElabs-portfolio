@@ -32,7 +32,7 @@ This repository is structured as a layered architecture model.
    - Think of this as an architectural constitution.
 
 4. **Models**
-   - [`/models`](./models/README.md)
+   - [`models`](./models/README.md)
    - Abstract, stack-specific architecture models.
    - Each model describes system boundaries, roles, stressors,
      failure modes, and guard rails.
