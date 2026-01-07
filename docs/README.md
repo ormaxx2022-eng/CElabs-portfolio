@@ -32,7 +32,11 @@ This repository is structured as a layered architecture model.
    - Think of this as an architectural constitution.
 
 4. **Models**
-   - [`/models`](./models)
+   - [Tokenomics Architecture](./tokenomics-architecture/)
+   - [On-chain Data](./onchain-data/)
+   - [Protocol Contracts](./protocol-contracts/)
+   - [L1/L2 Infra](./l1-l2-infra/)
+   - [Mempool / MEV Surface](./mempool-mev-surface/)
    - Abstract, stack-specific architecture models.
    - Each model describes system boundaries, roles, stressors,
      failure modes, and guard rails.
