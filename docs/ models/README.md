@@ -1,4 +1,4 @@
-# Models
+# models
 
 This section contains stack-specific architecture models.
 
